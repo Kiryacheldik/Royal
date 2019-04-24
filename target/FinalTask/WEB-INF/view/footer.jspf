@@ -1,0 +1,38 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<footer class="dark" style="color: white">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col col-lg-6">
+                <h2 class="focus-title"><span class="glyphicon glyphicon-time" style="margin-right: 1%; margin-top: 1%; font-size: 26px"></span><span><fmt:message key="text.footer.timetable" bundle="${bd}"/></span></h2>
+                <dl class="working-days">
+                    <dt><fmt:message key="text.footer.monday" bundle="${bd}"/></dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt><fmt:message key="text.footer.tuesday" bundle="${bd}"/></dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt><fmt:message key="text.footer.wednesday" bundle="${bd}"/></dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt><fmt:message key="text.footer.thursday" bundle="${bd}"/></dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt><fmt:message key="text.footer.friday" bundle="${bd}"/></dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt><fmt:message key="text.footer.saturday" bundle="${bd}"/></dt>
+                    <dd>09:00 - 21:00</dd>
+                    <dt><fmt:message key="text.footer.sunday" bundle="${bd}"/></dt>
+                    <dd>09:00 - 18:00</dd>
+                </dl>
+            </div>
+            <div class="footer-col footer-contacts col-lg-6">
+                <div class="contact-item"><span><fmt:message key="text.footer.studio" bundle="${bd}"/></span> <strong><fmt:message key="text.footer.address" bundle="${bd}"/></strong></div>
+                <div class="contact-item"><span><fmt:message key="text.footer.numbers" bundle="${bd}"/>:</span> <strong>+375 (29) 260-06-02</strong><strong>+375 (17) 280-45-02</strong></div>
+                <div class="contact-item"><span><fmt:message key="text.footer.email" bundle="${bd}"/>:</span> <strong><a href="${pageContext.request.contextPath}/#" style="color: white">kirill_cheldishkin99@tut.by</a></strong></div>
+                <div class="contact-item"><span><fmt:message key="text.footer.skype" bundle="${bd}"/>:</span> <strong><a href="${pageContext.request.contextPath}/#" style="color: white">cheldik100</a></strong></div>
+            </div>
+        </div>
+    </div>
+    <div style="color: white" class="footer-copyright text-center py-3"><fmt:message key="text.footer.authoredBy" bundle="${bd}"/>:
+        <a href="${pageContext.request.contextPath}/#" style="color: white"> <fmt:message key="text.footer.author" bundle="${bd}"/></a>
+    </div>
+</footer>
+</body>
+</html>
